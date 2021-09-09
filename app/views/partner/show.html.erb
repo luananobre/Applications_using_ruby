@@ -1,0 +1,26 @@
+<h1>Voce deu match com <%=@partners.length%> Jogadores</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <%@partners.each do |partners_out|%>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <%= image_tag 'https://cdn4.iconfinder.com/data/icons/feather/24/user-256.png', size: "30" %>
+                <div class="card-body">
+                    <h5 class="card-title"><%= partners_out.name%></h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Nível: <%= partners_out.level%></li>
+                    <li class="list-group-item">Idade: <%= partners_out.age%></li>
+                    <li class="list-group-item">Gênero: <%= partners_out.gender%></li>
+                    <li class="list-group-item">Centro de treinamento: <%= partners_out.train_center%></li>
+                    <li class="list-group-item">Posição de Jogada: <%= partners_out.player_role%></li>
+                </ul>
+            </div>           
+        </div> 
+    <% end%>
+</div>
+
+<div><%= link_to 'Voltar', partner_path%></div> 
+
+    
+

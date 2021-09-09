@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FootvolleyPlayer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <div>
+    <nav class="navbar navbar-expand-lg sticky-top text-white navbar-dark ">
+      <div class="container-fluid">
+        <h1><%= image_tag 'ombro.png', size: "50" %>Futevolei Lovers</h1>
+      </div>
+    </nav>
+  </div>
+
+  <body>
+    <div class="container">
+      <%= yield %>
+  </body>
+
+</html>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @player.name %>
+</p>
+
+<p>
+  <strong>Gênero:</strong>
+  <%= @player.gender %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @player.age %>
+</p>
+
+<p>
+  <strong>Nível:</strong>
+  <%= @player.level %>
+</p>
+
+<p>
+  <strong>Posição de jogada:</strong>
+  <%= @player.player_role %>
+</p>
+
+<p>
+  <strong>Centro de treinamento:</strong>
+  <%= @player.train_center %>
+</p>
+
+<%#= link_to 'Editar', edit_player_path(@player) %> |
+<%= link_to 'OK', new_player_path %>
